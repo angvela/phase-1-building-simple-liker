@@ -1,31 +1,36 @@
-/* Hide and style the error modal */
+/* 1. Hide the modal by default */
 .hidden {
   display: none;
 }
+
+/* 2. Style the error modal */
 #modal {
   position: fixed;
   top: 20px;
   left: 50%;
   transform: translateX(-50%);
-  padding: 1em 2em;
-  background: pink;
-  border: 1px solid red;
-  border-radius: 5px;
+  padding: 1em 1.5em;
+  background-color: #fdecea;
+  color: #611a15;
+  border: 1px solid #f5c6cb;
+  border-radius: 4px;
   font-weight: bold;
   z-index: 1000;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.1);
 }
 
-/* Heart glyph styling */
+/* 3. Style for each heart icon */
 .like-glyph {
   cursor: pointer;
-  font-size: 2em;
+  font-size: 2rem;
+  color: #888;                  /* gray for empty heart */
   user-select: none;
-  color: #888; /* gray for empty heart */
-  margin: 0 0.2em;
+  margin: 0 0.3rem;
   transition: color 0.2s ease;
 }
 
-/* When liked */
+/* 4. Activated (liked) heart appearance */
 .activated-heart {
   color: red;
 }
+
