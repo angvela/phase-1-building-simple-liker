@@ -1,66 +1,31 @@
-body {
-  margin: 5% 10%;
-  background-color: rgb(29,161,242);
+/* Hide and style the error modal */
+.hidden {
+  display: none;
+}
+#modal {
+  position: fixed;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 1em 2em;
+  background: pink;
+  border: 1px solid red;
+  border-radius: 5px;
+  font-weight: bold;
+  z-index: 1000;
 }
 
+/* Heart glyph styling */
 .like-glyph {
   cursor: pointer;
+  font-size: 2em;
+  user-select: none;
+  color: #888; /* gray for empty heart */
+  margin: 0 0.2em;
+  transition: color 0.2s ease;
 }
 
-body h1 {
-  color: #FFF;
-}
-
-body > header {
-  margin-bottom: 5%;
-}
-
-article.media-post {
-  border: solid 1px #000;
-  margin: 2% 3%;
-  background-color: #fff;
-}
-
-article.media-post > p {
-  background-color: rgba(0,123,255,0.25);
-  padding: 1em 2em;
-}
-
-article.media-post > header {
-  padding: 1em 2em;
-  background-color: rgb(225,232,237);
-}
-
-article.media-post > footer {
-  color: rgb(170,184,194);
-}
-
-article.media-post > footer ul {
-  list-style-type: none;
-}
-
-#modal {
-  border-radius: 10px;
-  background-color: maroon;
-  color: white;
-
-  margin: 1em;
-  padding: 1em;
-
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-}
-
-#modal p {
-  margin-bottom: 0;
-}
-
+/* When liked */
 .activated-heart {
   color: red;
-}
-
-.hidden {
-  visibility: hidden;
 }
